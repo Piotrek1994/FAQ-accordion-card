@@ -19,7 +19,7 @@ main {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 15px;
-	background-color: red;
+	background-color: white;
 	z-index: 0;
 	/* overflow: hidden;  */
 }
@@ -31,22 +31,28 @@ main {
 	left: 0;
 	background-position: center;
 	background-size: cover;
-	z-index: -200;
 	overflow: hidden;
 }
 
-.card-left-side img {
+.woman {
     position: absolute;
     transform: translate(-18%, 18%);
-	z-index: -200;
 
+
+}
+
+.shadow {
+
+	position: absolute;
+	transform: translate(-63%, -33%);
+	 z-index: -200;
 }
 
 .box-desktop {
 	position: absolute;
 	background-image: url(images/illustration-box-desktop.svg);
-	width: 30%;
-	height: 30%;
+	width: 200px;
+	height: 200px;
 	background-size: cover;
 	transform: translate(-46%, 89%);
 
