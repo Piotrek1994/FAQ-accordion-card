@@ -20,7 +20,8 @@ main {
 	transform: translate(-50%, -50%);
 	border-radius: 15px;
 	background-color: red;
-	/* overflow: hidden; */
+	z-index: 0;
+	/* overflow: hidden;  */
 }
 
 .card-left-side {
@@ -28,25 +29,33 @@ main {
 	height: 100%;
 	width: 50%;
 	left: 0;
-
 	background-position: center;
 	background-size: cover;
-	z-index: 200;
+	z-index: -200;
+	overflow: hidden;
 }
 
 .card-left-side img {
-	display: block;
-	height: 80%;
-	left: 0;
+    position: absolute;
+    transform: translate(-18%, 18%);
+	z-index: -200;
+
 }
 
 .box-desktop {
 	position: absolute;
 	background-image: url(images/illustration-box-desktop.svg);
-	width: 50%;
-	height: 50%;
-	background-position: center;
+	width: 30%;
+	height: 30%;
 	background-size: cover;
-	left: -20%;
-	top: 44%;
+	transform: translate(-46%, 89%);
+
+}
+
+
+.card-right-side {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	right: 0;
 }
