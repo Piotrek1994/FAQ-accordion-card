@@ -91,6 +91,11 @@ main {
 
 .answers {
 	display: none;
+	padding-bottom: 1px;
+}
+
+.answ1 {
+	display: block;
 }
 
 .arrow {
@@ -105,11 +110,12 @@ main {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0;
+	padding: 10px 0;
 	}
 
 .quest {
-	margin: 25px 0;
+	margin-top: 25px;
+	margin-bottom: 15px;
 	cursor: pointer;
 	transition: color .3s;
 }
